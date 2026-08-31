@@ -1,0 +1,35 @@
+[project]
+title = "Koudelka"
+slug = "koudelka-recomp"
+region = "Europe PAL"
+revision = "SLES-02897/SLES-12897/SLES-22897/SLES-32897"
+track = "recompilation"
+intended_audience = "research"
+commercial_use_possible = false
+
+[retail_identity]
+disc_count = 4
+serials = ["SLES-02897", "SLES-12897", "SLES-22897", "SLES-32897"]
+boot_executables = ["SLES_028.97", "SLES_128.97", "SLES_228.97", "SLES_328.97"]
+executable_sha256 = "661bd13917e21032dcfe98ca012011d1021cb79f45688aa4c50a75e6d7d95390"
+load_address = "0x80010000"
+entry_point = "0x800A0DFC"
+stack_base = "0x801FFFF0"
+
+[framework]
+repository = "https://github.com/Alexbeav/psxrecomp.git"
+commit = "d60f5947e554702a45d84abd789f2f06405c6b97"
+tree = "3590a3ee4021049f28f970ba837b2cc6e3fc7b3d"
+recomp_ui_commit = "4eda65430a431e5685ae0c515ebcd912c7843bff"
+license = "PolyForm Noncommercial 1.0.0"
+
+[studio]
+repository = "https://github.com/TechnicallyComputers/retcomm-studio"
+commit = "249422969c1c59ac2a1f8aa2299e876a7133998e"
+
+[pilot]
+graduation_state = "candidate"
+setup_host_audit_failures = -1
+windows_build_sha256 = ""
+headless_boot_frames = 0
+disc_set = "data_only_one_program_four_images"

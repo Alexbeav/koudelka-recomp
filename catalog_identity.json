@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Koudelka",
+    "id": "SLES-02897",
+    "boot_exe": "SLES_028.97"
+  },
+  "marketing": {
+    "description": "A native recompilation setup host for Koudelka.",
+    "publisher": "SNK",
+    "year": "2000",
+    "region": "Europe",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "disc1.cue",
+    "bin_name": "disc1.bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 542302992,
+      "md5": "4644d60361161a52212dd9053413626d",
+      "sha1": "43cfec263deaaf482536506596d53b175972fe7f",
+      "crc32": "61cb5610"
+    },
+    "disc_fp": "7769f50110494492f9b5f19ce255fe0bf6bf81414d44b036f9843557485161b3"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x800A0DFC",
+    "text_size": "0x000A5800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 1641,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

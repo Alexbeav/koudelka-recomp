@@ -1,0 +1,70 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Koudelka"
+id = "SLES-02897"
+players = 1
+exe = "disc/SLES_028.97"
+discs = [
+    "disc/disc1.cue",
+    "disc/disc2.cue",
+    "disc/disc3.cue",
+    "disc/disc4.cue",
+]
+disc_serials = [
+    "SLES-02897",
+    "SLES-12897",
+    "SLES-22897",
+    "SLES-32897",
+]
+load_address = "0x80010000"
+entry_pc = "0x800A0DFC"
+text_size = "0x000A5800"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "disc1.bin"
+cue_name = "disc1.cue"
+boot_exe = "SLES_028.97"
+known_sizes = [542302992]
+known_md5 = [
+  "4644d60361161a52212dd9053413626d",
+]
+known_sha1 = [
+  "43cfec263deaaf482536506596d53b175972fe7f",
+]
+known_crc32 = [
+  "61cb5610",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Koudelka Recompiled"
+memcard_dir = "saves"
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+required_disc_fps = [
+    "7769f50110494492f9b5f19ce255fe0bf6bf81414d44b036f9843557485161b3",
+    "56c978890e12e762e0c7d943fab1f93956c7496c4e437d2f5673f02daf3f758a",
+    "1847b335f1c58692905c41e105abe524e003477e19cfa8af00eac3b32f85b8c5",
+    "d103d33207c867016ff59690338014c78566378bee4f68ef4c69e727dbc33524",
+]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "7769f50110494492f9b5f19ce255fe0bf6bf81414d44b036f9843557485161b3"

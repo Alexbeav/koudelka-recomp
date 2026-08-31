@@ -1,0 +1,31 @@
+{
+  "cue_path": "disc1.cue",
+  "cue_name": "disc1.cue",
+  "bin_name": "disc1.bin",
+  "track_count": 1,
+  "data_track_size": 542302992,
+  "data_track_md5": "4644d60361161a52212dd9053413626d",
+  "data_track_sha1": "43cfec263deaaf482536506596d53b175972fe7f",
+  "data_track_crc32": "61cb5610",
+  "boot_exe": "SLES_028.97",
+  "serial": "SLES-02897",
+  "serial_exe": "SLES_028.97",
+  "volume_id": "KOUDELKA_1",
+  "display_name": "Koudelka",
+  "load_address": "0x80010000",
+  "entry_pc": "0x800A0DFC",
+  "text_size": "0x000A5800",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "7769f50110494492f9b5f19ce255fe0bf6bf81414d44b036f9843557485161b3",
+  "boot_exe_sha256": "661bd13917e21032dcfe98ca012011d1021cb79f45688aa4c50a75e6d7d95390",
+  "seed_count": 1641,
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
