@@ -43,6 +43,7 @@ disc change is still untested in this pilot.
 | `PSX-PUB-004` | independently verified | Rejected draft contained copied memory-card files; sealed ZIP contains none. |
 | `PSX-PUB-006` | independently verified | Packaging passes with no tracked optional launcher assets. |
 | `PSX-WIN-005` | independently verified | C, C++, and RC resolve to RetComM toolchain `1.0.14`; the spaced-path build passes. |
+| `PSX-WIN-006` | independently verified | Ambient WSL Bash lacked `zip`; explicit Git-for-Windows Bash produced the final archive. |
 
 ## Corpus consulted for the current blocker
 
@@ -89,6 +90,7 @@ disc-change route without changing executable or memory-card identity.
 ## Knowledge-base actions
 
 - Updated `PSX-PUB-004`, `PSX-PUB-006`, and `PSX-WIN-005` evidence.
+- Added the Windows packaging-shell identity candidate as `PSX-WIN-006`.
 - Retained `PSX-DISC-001` as a static result with an open connected route.
 - Next independent consumer: another data-only multi-disc title.
 - Upstream candidate: setup packager payload and Windows RC guards.
