@@ -31,7 +31,7 @@ disc change is still untested in this pilot.
 |---|---|:---:|:---:|
 | Disc-set identity | Four serials; one byte-identical boot program SHA-256 `661BD13917E21032DCFE98CA012011D1021CB79F45688AA4C50A75E6D7D95390` | Yes | No |
 | Setup archive payload | 2,003 files; zero forbidden files, generated retail source, private paths, or CRLF shell scripts | Yes | No |
-| Exact extracted build | 166 of 166 actions; executable SHA-256 `1C8824D8C58D71B9628E168606CFC8696ED81E5D260015690282600B680BB955` | Yes | No |
+| Exact extracted build | 166 of 166 actions; executable SHA-256 `815259BD76F3ED35A664380BDC30642FF585FCE807CF1FCCE31247675BEE2394` | Yes | No |
 | Studio source audit | Zero required failures; two accepted box-art warnings | Yes | No |
 
 ## Shared findings consumed
