@@ -12,16 +12,16 @@
 The exact `0.3.0` Windows ZIP passes the payload audit and a clean extracted
 build. The build used a path with spaces, an invalid inherited
 `SSL_CERT_FILE`, and the frozen RetComM toolchain. All four owned discs contain
-the same boot program, so one setup host is structurally valid. Mid-session
-disc change is still untested in this pilot.
+the same boot program, so one setup host is structurally valid. The operator
+confirmed Disc 1 gameplay in the earlier private package. Mid-session disc
+change is still untested in this pilot.
 
 ## Product graduation state
 
 - Current state: `bootstrap_verified`
 - Evidence: zero required Studio audit failures; exact ZIP clean build; four-disc static identity
 - Next release gate: exact-package R2 canaries
-- Missing hard gates: exact installed startup, risk canaries, and remote redownload audit
-  four-platform CI, remote redownload audit, remote redownload audit
+- Missing hard gates: exact installed startup, disc-change canary, and remote redownload audit
 - Human-completion coverage: Disc 1 gameplay was confirmed only on the earlier private package
 
 ## Verified milestones
@@ -73,8 +73,8 @@ Not measured. This pilot does not make a performance claim.
 ## Current blockers
 
 1. Complete the exact installed startup and risk canaries.
-4. Complete a connected disc-change route.
-2. Redownload and audit the private draft before any public release.
+2. Complete a connected disc-change route.
+3. Redownload and audit the private draft before any public release.
 
 ## Next decisive experiment
 
