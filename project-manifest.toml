@@ -28,7 +28,8 @@ repository = "https://github.com/TechnicallyComputers/retcomm-studio"
 commit = "249422969c1c59ac2a1f8aa2299e876a7133998e"
 
 [pilot]
- = "local_candidate_built"
+graduation_state = "bootstrap_verified"
+public_package_status = "local_candidate_built"
 setup_host_audit_failures = 0
 windows_build_sha256 = "815259bd76f3ed35a664380bdc30642ff585fce807cf1fcce31247675bee2394"
 headless_boot_frames = 0
