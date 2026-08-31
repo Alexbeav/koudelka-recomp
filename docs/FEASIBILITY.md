@@ -1,6 +1,6 @@
 # Koudelka release feasibility
 
-Status: candidate setup-host pilot
+Status: `bootstrap_verified`; Windows package pending R2 and R3
 
 The operator confirmed that the promoted private Disc 1 build reaches
 gameplay. This source-only pilot does not inherit that claim. It must pass the

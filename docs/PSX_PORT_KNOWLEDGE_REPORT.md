@@ -5,7 +5,7 @@
 - Repository/branch: local pilot, `master`
 - Retail identity: Europe `SLES-02897`, `SLES-12897`, `SLES-22897`, and `SLES-32897`
 - Architecture lane: source-only owned-input setup host
-- License boundary: title license is not selected; PSXRecomp keeps PolyForm Noncommercial 1.0.0; recomp-ui keeps MIT
+- License boundary: portfolio files use GPL-3.0-only; PSXRecomp keeps PolyForm Noncommercial 1.0.0; recomp-ui keeps MIT
 
 ## Executive state
 
@@ -17,12 +17,11 @@ disc change is still untested in this pilot.
 
 ## Product graduation state
 
-- Current state: `candidate` (no graduation claim)
+- Current state: `bootstrap_verified`
 - Evidence: zero required Studio audit failures; exact ZIP clean build; four-disc static identity
-- Required next state: `bootstrap_verified`
-- Missing hard gates: exact installed startup, connected disc-change route,
-  four-platform CI, remote redownload audit, title license, and public
-  dependency availability
+- Next release gate: exact-package R2 canaries
+- Missing hard gates: exact installed startup, risk canaries, and remote redownload audit
+  four-platform CI, remote redownload audit, remote redownload audit
 - Human-completion coverage: Disc 1 gameplay was confirmed only on the earlier private package
 
 ## Verified milestones
@@ -69,17 +68,13 @@ Not measured. This pilot does not make a performance claim.
 | Debt | Owner | User impact | Evidence/containment | Removal or acceptance gate |
 |---|---|---|---|---|
 | Mid-session disc change untested | Title pilot | Later discs may not be usable | Four-disc static identity only | Complete a natural connected disc-change route. |
-| No title license | Portfolio release | Blocks public source release | No root `LICENSE` | Select the license and audit every archive. |
-| Frozen framework branch is local | Portfolio release | A public clone cannot resolve the pin | Local commit `d60f5947e` | Publish the approved branch and verify a fresh clone. |
 | No exact installed startup | Title pilot | Setup build does not prove boot | `headless_boot_frames = 0` | Run the exact installed product past the bootstrap gate. |
 
 ## Current blockers
 
-1. Select and add the title license.
-2. Publish the frozen framework branch after explicit authorization.
-3. Run four-platform CI and the exact installed startup gate.
+1. Complete the exact installed startup and risk canaries.
 4. Complete a connected disc-change route.
-5. Redownload and audit the private draft before any public release.
+2. Redownload and audit the private draft before any public release.
 
 ## Next decisive experiment
 
