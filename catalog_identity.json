@@ -38,7 +38,7 @@
     "source": "boot_exe_jal"
   },
   "warnings": [
-    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
   ],
   "notes": [
     "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",

@@ -1,5 +1,4 @@
-# Koudelka  Recompiled
-
+# Koudelka Recompiled
 <!-- retcomm-readme-metrics -->
 [![GitHub downloads (all assets, all releases)](https://img.shields.io/github/downloads/Alexbeav/koudelka-recomp/total)](https://github.com/Alexbeav/koudelka-recomp/releases)
 [![GitHub downloads (latest release)](https://img.shields.io/github/downloads/Alexbeav/koudelka-recomp/latest/total)](https://github.com/Alexbeav/koudelka-recomp/releases/latest)
@@ -7,7 +6,7 @@
 <!-- /retcomm-readme-metrics -->
 
 Static recompilation of **Koudelka** built on
-[psxrecomp](https://github.com/mstan/psxrecomp) and
+[psxrecomp](https://github.com/Alexbeav/psxrecomp) and
 [recomp-ui](https://github.com/mstan/recomp-ui).
 
 A native recompilation setup host for Koudelka.
@@ -49,15 +48,10 @@ BIOS/ROM/save plumbing so you are not stuck repeating each game’s wizard by ha
 
 ## Legal
 
-You must own the original game. Disc images under `disc/` are gitignored and
-must never be committed. Retail BIOS dumps are not redistributed; OpenBIOS is
-used for Generate unless you supply your own SCPH locally.
-
-Default app icon: `assets/psxrecomp.ico` (and `.png` / `.svg`) — RetComM-themed controller mark from `psxrecomp/assets/`. Windows builds embed it via `APP_ICON`.
-
-Optional box art under `launcher_assets/img/` may come from
-[libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails)
-(`Named_Boxarts`); see `BOXART_SOURCE.txt` when present.
+You must own the original game and provide your own supported disc image.
+Disc images under `disc/` are ignored by Git and must never be committed.
+Retail BIOS files are not redistributed. The Windows setup host collects the
+required local inputs and builds the game on the user's computer.
 
 ## Quick start (dev)
 
@@ -96,6 +90,20 @@ in release CI.
   <a href="https://discord.gg/Ad9BwSzctP"><img src=".github/raid-discord.png" alt="Join the Retro AI Development (R.A.I.D.) Discord" width="200"></a>
 </p>
 <!-- /retcomm-readme-raid -->
+
+## Platform support
+
+Release 0.3.0 supports Windows x64. Linux and macOS remain in the workflow,
+but their release jobs are deferred under the Wave 2 Windows-first exception.
+
+## License boundary
+
+Portfolio-owned source, scripts, configuration, and documentation use
+GPL-3.0-only. The `LICENSE` file contains the complete terms.
+
+PSXRecomp keeps PolyForm Noncommercial 1.0.0. Recomp-UI keeps MIT. The GPL
+does not cover retail content, generated retail code, artwork, trademarks, or
+these separately licensed dependencies.
 
 ## About this project
 
