@@ -89,3 +89,9 @@ disc-change route without changing executable or memory-card identity.
 - Retained `PSX-DISC-001` as a static result with an open connected route.
 - Next independent consumer: another data-only multi-disc title.
 - Upstream candidate: setup packager payload and Windows RC guards.
+
+## v0.3.3 setup correction
+
+The source now uses `Koudelka_Recompiled` as the only setup executable name. The batch source
+gate passes. The exact-ZIP automatic-relaunch canary and remote release audit
+remain open. Public `v0.3.0` remains unchanged.
